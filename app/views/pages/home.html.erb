@@ -1,0 +1,45 @@
+<table>
+<% @products.each do |product| %>
+
+  
+<tr>
+  <div class="container">
+    
+  
+  <div class="jumbotron" id="Product">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"><%= image_tag("images.png") %></div>
+      
+      
+    <div class="col-sm-8">
+    <h2>
+      
+    
+    
+      <%= product.title %>
+    </h2>
+    <p>
+      
+    
+      <%= product.description %>
+      </p>
+    <h3>
+      
+    
+    Price: <%= product.price %>
+     </h3> 
+      <button class="btn btn-primary" src="">
+        Add to Cart
+      </button>
+      </div>
+        </div>
+    </div>
+    
+</div>
+    </div>
+  </tr>
+  
+<% end %>
+  </table>
