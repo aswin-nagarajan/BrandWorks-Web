@@ -5,4 +5,8 @@ class Product < ActiveRecord::Base
   validates :description, presence: true, length: {minimum: 10, maximum:300}
   validates :price, presence: true
  
-end
+  def add
+    
+    
+    end
+  end
